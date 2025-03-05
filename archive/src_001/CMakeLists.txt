@@ -127,6 +127,9 @@ if (PQX_LIBRARY)
     target_link_libraries(${CMAKE_PROJECT_NAME} PUBLIC ${PQX_LIBRARY})
 endif ()
 
+find_package(Python3 COMPONENTS Interpreter Development)
+target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE Python3::Python)
+
 # Create a simple configuration header
 # configure_file(config.h.in config.h)
 
