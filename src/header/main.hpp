@@ -3,11 +3,11 @@
 
 #include <iostream>
 
-#define NL          '\n'
-#define RT          '\r'
-#define SP          '\x20'
-#define LINE_FEED   std::cout << NL
-#define SEP         util::separator()
+#define NL '\n'
+#define RT '\r'
+#define SP '\x20'
+#define LINE_FEED std::cout << NL
+#define SEP util::separator()
 
 namespace util {
 
