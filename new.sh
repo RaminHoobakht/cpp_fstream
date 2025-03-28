@@ -1,23 +1,24 @@
 #! /bin/bash
 
 clear
-ls -ls archive
+ls -ltrh archive
 echo "enter file number: "
-read -r file_no
+read -r fileno
 
 git add --all
 git commit -m 'before creating new source file'
 
-mv src/app/main.cpp archive/main_"$file_no".cpp
+mv src/app/main.cpp archive/main_"$fileno".cpp
 
 now="$(date +"%T")"
 
-printf '%s\n' "#include <iostream>
+printf '%s\n' "/*  */
 
-#define NL '\n'
+#include \"../header/utillib.hpp\"
+#include <iostream>
+
 
 int main() {
-
 
 
     std::cout << \"\n #($now): The End ...\" << std::endl;
