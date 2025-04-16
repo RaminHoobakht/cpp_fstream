@@ -1,14 +1,10 @@
-#include <iostream>
-#include "../header/utillib.hpp"
-#include <fstream>
+/*   */
+
+#include "main.hpp"
 
 
 int main() {
 
-    
-    std::fstream fs{};
-
-
-    std::cout << "\n #(02:35:42): The End ..." << std::endl;
+    out << "\n #(00:00:00): The End ..." << end;
     return EXIT_SUCCESS;
 }
