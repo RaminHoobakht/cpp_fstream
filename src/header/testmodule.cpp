@@ -1,4 +1,5 @@
-#include "cpptrain.hpp"
+#include "testmodule.hpp"
+
 
 /* definition */
 namespace cpp {
